@@ -1,0 +1,633 @@
+/* ===================================
+   FILE CSS UNTUK PROFIL PERUSAHAAN
+   Nama File: style-profil.css
+   =================================== */
+
+/* ===================================
+   RESET DEFAULT STYLE
+   =================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: white;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #FAF3D6;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    width: 66px;
+    height: 66px;
+    object-fit: cover;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+    margin-left: 1rem;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #E4947D;
+}
+
+.navbar-nav .nav-link.active {
+    color: #000000;
+    border-bottom: 4px solid #E4947D;
+}
+
+/* ===================================
+   HERO SECTION
+   =================================== */
+.hero-section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+.banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+    
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+    
+        .banner-text h1 {
+            font-size: 60px;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+            margin-bottom: 20px;
+        }
+    
+        
+
+/* ===================================
+   CONTENT SECTION (SEJARAH, VISI MISI)
+   =================================== */
+.content-section {
+    background-color: white;
+    padding: 50px;
+    margin: 30px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.section-content {
+    text-align: justify;
+    line-height: 1.8;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.read-more-btn {
+    background-color: #F2B6A4;
+    color: #000;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.read-more-btn:hover {
+    background-color: #E4947D;
+    transform: translateY(-2px);
+}
+
+/* Vision Mission Container */
+.vm-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+    align-items: start;
+    /* ← TAMBAHKAN INI */
+}
+
+/* Box VISI (Kiri - Lebih Tinggi) */
+.vm-box1 {
+    background: #FAF3D6;
+    padding: 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+    /* ← TAMBAHKAN INI */
+}
+
+/* Box MISI (Kanan) */
+.vm-box {
+    background: #e0e0e0;
+    padding: 40px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vm-box h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.vm-placeholder {
+    background: #e0e0e0;
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+    color: #666;
+    font-style: italic;
+}
+
+/* ===================================
+   STYLE.CSS - FILE CSS TERPISAH
+   =================================== */
+
+/* Reset dan Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===================================
+   SECTION STRUKTUR ORGANISASI
+   =================================== */
+
+.org-section {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    background: white;
+    padding: 60px 40px;
+    box-shadow: none;
+}
+
+/* Judul Section */
+.section-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 0.95rem;
+}
+
+/* ===================================
+   LAYOUT HORIZONTAL (FLEXBOX)
+   =================================== */
+
+.org-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 30px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+/* ===================================
+   BAGIAN KIRI: DIAGRAM STRUKTUR
+   =================================== */
+
+.diagram-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diagram-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================================
+   BAGIAN KANAN: CAROUSEL LEADERS
+   =================================== */
+
+.leaders-carousel-container {
+    flex: 1;
+    min-width: 350px;
+    position: relative;
+    padding: 0 50px;
+}
+
+/* Card untuk setiap leader */
+.leader-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+}
+
+/* Foto leader */
+.leader-img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Nama leader */
+.leader-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 15px 0 5px;
+}
+
+/* Jabatan leader */
+.leader-role {
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* ===================================
+   CUSTOMISASI CAROUSEL BOOTSTRAP
+   =================================== */
+
+/* Tombol Prev & Next */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(44, 62, 80, 0.8);
+    border-radius: 50%;
+    top: 40%;
+    opacity: 1;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(44, 62, 80, 1);
+}
+
+/* Indicators (titik navigasi) */
+.carousel-indicators {
+    position: relative;
+    bottom: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.carousel-indicators button {
+    background-color: #2c3e50;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.carousel-indicators button.active {
+    background-color: #3498db;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+/* Tablet dan Mobile (≤ 992px) */
+@media (max-width: 992px) {
+    .org-content {
+        flex-direction: column;
+    }
+
+    .diagram-container,
+    .leaders-carousel-container {
+        width: 100%;
+    }
+
+    .leader-card {
+        margin: 0 10px;
+    }
+
+    .carousel-control-prev {
+        left: 10px;
+    }
+
+    .carousel-control-next {
+        right: 10px;
+    }
+}
+
+/* Mobile Kecil (≤ 576px) */
+@media (max-width: 576px) {
+    .leader-img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .org-section {
+        padding: 30px 15px;
+    }
+}
+
+/* ===================================
+   FOOTER SECTION
+   =================================== */
+/* Footer */
+.footer {
+    background-color: #FAF3D6;
+    padding-top: 3rem;
+}
+
+.footer-logo {
+    width: 102px;
+    height: 102px;
+    object-fit: cover;
+}
+
+.footer-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.875;
+    letter-spacing: 0.32px;
+}
+
+.footer-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #000000;
+}
+
+.footer-info .info-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0.32px;
+    margin-bottom: 0.5rem;
+}
+
+.footer-info .info-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.875;
+    letter-spacing: 0.32px;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-menu li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 0.32px;
+    transition: color 0.3s ease;
+}
+
+.footer-menu li a:hover {
+    color: #E4947D;
+}
+
+.footer-social {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-social li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 0.32px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-social li a:hover {
+    color: #E4947D;
+}
+
+.footer-social li a i {
+    font-size: 18px;
+}
+
+.footer-bottom {
+    background-color: #F1B6A4;
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0.32px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 18px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
+
+    .milk-splash {
+        height: 250px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .contact-heading {
+        font-size: 28px;
+    }
+
+    .form-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .milk-splash {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .contact-heading {
+        font-size: 24px;
+    }
+
+    .contact-description,
+    .form-description {
+        font-size: 18px;
+    }
+
+    .form-title {
+        font-size: 24px;
+    }
+
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-icon i {
+        font-size: 24px;
+    }
+
+    .social-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .social-icon i {
+        font-size: 24px;
+    }
+}
+
+/* ===================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+   =================================== */
+@media (max-width: 768px) {
+    .vm-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .leadership {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .content-section,
+    .org-section {
+        padding: 30px 20px;
+    }
+}
+
+/* ===================================
+   END OF CSS FILE
+   =================================== */

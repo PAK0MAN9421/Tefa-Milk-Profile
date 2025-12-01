@@ -112,3 +112,25 @@
   width: 100%;
   max-width: 100%;
 }
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: #E4947D;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: 0.3s ease;
+}
+
+.social-icon i {
+    font-size: 20px;
+}
+
+.social-icon:hover {
+    background: #f0baab;
+    transform: scale(1.1);
+}

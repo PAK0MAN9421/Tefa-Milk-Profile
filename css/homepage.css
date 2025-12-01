@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif !important;
+    font-family: "Poppins", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6,
 .navbar-brand,
 .section-title,
 .footer-heading {
-    font-family: "Poppins", sans-serif !important;
+    font-family: "Poppins", sans-serif;
 }
 
 /* ========== ORIGINAL CSS KAMU ========== */
@@ -22,8 +22,10 @@ body {
 /* HERO */
 .hero-section {
     position: relative;
-    width: 100%;
-    height: 100%;
+    height: 30px; /* Sesuaikan tinggi sesuai kebutuhan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
@@ -41,14 +43,27 @@ body {
     filter: brightness(70%);
 }
 
-.hero-content {
+.hero-background {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
     text-align: center;
     color: white;
-    z-index: 10;
 }
 
 .hero-content h1 {
@@ -64,37 +79,44 @@ body {
     position: relative;
     height: 100vh;
     margin-top: -90px; /* SESUAIKAN DENGAN TINGGI NAVBAR-MU */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 0;
 }
 
 /* BUTTON */
 .hero-btn-primary {
-    background: #f5e6c8;
-    color: #2d2a26;
-    padding: 15px 35px;
+    background: #E4947D;
+    color: #ffffff;
+    padding: 10px 30px;
     border-radius: 10px;
     border: none;
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 600;
     cursor: pointer;
     transition: 0.3s ease;
     margin-right: 5px;
+    text-decoration: none;
 }
 
 .hero-btn-primary:hover {
-    background: #e8d9b8;
+    background: #f0baab;
     transform: scale(1.05);
 }
 
 .hero-btn-outline {
     background: transparent;
     color: #ffffff;
-    padding: 12px 30px;
+    padding: 8px 25px;
     border-radius: 10px;
     border: 2px solid #ffffff;
     font-size: 1.1rem;
     font-weight: 700;
     cursor: pointer;
     transition: 0.3s ease;
+    text-decoration: none;
 }
 
 .hero-btn-outline:hover {
@@ -149,29 +171,30 @@ body {
 
 /* button jelajahi katalog*/
 .btn-jelajahi {
-    display: inline-block;
-    padding: 12px 28px;
-    background: #FAF3D6;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+    background: #E4947D;
+    color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
     font-weight: 600;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    cursor: pointer;
     transition: 0.3s ease;
+    margin-right: 5px;
+    text-decoration: none;
 }
 
 .btn-jelajahi:hover {
-    background: #d9c7a3;
+    background: #f0baab;
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
-
 /* ============================
       PRODUK KAMI
 ============================= */
 
 .produk-kami {
-    padding: 60px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -456,216 +479,3 @@ body {
     }
 }
 
-/* FOOTER */
-.footer {
-  background-color: #FAF3D6;
-  padding-top: 3rem;
-}
-
-.footer-logo {
-  width: 102px;
-  height: 102px;
-  object-fit: cover;
-}
-
-.footer-text {
-  font-weight: 600;
-  font-size: 16px;
-  color: #000000;
-  line-height: 1.875;
-  letter-spacing: 0.32px;
-}
-
-.footer-heading {
-  font-weight: 600;
-  font-size: 30px;
-  color: #000000;
-}
-
-.footer-info .info-title {
-  font-weight: 700;
-  font-size: 16px;
-  color: #000000;
-  letter-spacing: 0.32px;
-  margin-bottom: 0.5rem;
-}
-
-.footer-info .info-text {
-  font-weight: 600;
-  font-size: 16px;
-  color: #000000;
-  line-height: 1.875;
-  letter-spacing: 0.32px;
-}
-
-.footer-menu {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-menu li {
-  margin-bottom: 0.5rem;
-}
-
-.footer-menu li a {
-  font-weight: 700;
-  font-size: 16px;
-  color: #000000;
-  text-decoration: none;
-  letter-spacing: 0.32px;
-  transition: color 0.3s ease;
-}
-
-.footer-menu li a:hover {
-  color: #E4947D;
-}
-
-.footer-social {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-social li {
-  margin-bottom: 0.75rem;
-}
-
-.footer-social li a {
-  font-weight: 700;
-  font-size: 16px;
-  color: #000000;
-  text-decoration: none;
-  letter-spacing: 0.32px;
-  transition: color 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.footer-social li a:hover {
-  color: #E4947D;
-}
-
-.footer-social li a i {
-  font-size: 18px;
-}
-
-.footer-bottom {
-  background-color: #F1B6A4;
-  margin-top: 2rem;
-}
-
-.footer-bottom p {
-  font-weight: 700;
-  font-size: 16px;
-  color: #000000;
-  letter-spacing: 0.32px;
-}
-
-/* Responsive */
-@media (max-width: 991px) {
-  .navbar-brand {
-    font-size: 24px;
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 18px;
-  }
-
-  .hero-title {
-    font-size: 36px;
-  }
-
-  .hero-subtitle {
-    font-size: 20px;
-  }
-
-  .milk-splash {
-    height: 250px;
-  }
-
-  .section-title {
-    font-size: 36px;
-  }
-
-  .contact-heading {
-    font-size: 28px;
-  }
-
-  .form-title {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 768px) {
-  .milk-splash {
-    display: none;
-  }
-
-  .hero-title {
-    font-size: 28px;
-  }
-
-  .hero-subtitle {
-    font-size: 18px;
-  }
-
-  .section-title {
-    font-size: 28px;
-  }
-
-  .contact-heading {
-    font-size: 24px;
-  }
-
-  .contact-description,
-  .form-description {
-    font-size: 18px;
-  }
-
-  .form-title {
-    font-size: 24px;
-  }
-
-  .contact-icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .contact-icon i {
-    font-size: 24px;
-  }
-
-  .social-icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .social-icon i {
-    font-size: 24px;
-  }
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-text {
-        max-width: 100%;
-    }
-
-    .hero-img {
-        margin-top: 20px;
-    }
-
-    .produk-grid, .footer-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .best-content {
-        flex-direction: column;
-        text-align: center;
-    }
-}

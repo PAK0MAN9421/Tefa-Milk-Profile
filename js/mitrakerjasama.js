@@ -23,10 +23,10 @@ document.getElementById("waForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
     let nama = document.getElementById("nama").value;
-    let email = document.getElementById("email").value;
+    let email = document.getElementById("email").value
     let pesan = document.getElementById("pesan").value;
 
-    let nomorAdmin = "628xxxxxxxxxx"; // ganti dengan nomor TEFA MILK
+    let nomorAdmin = "6287729664976"; // ganti dengan nomor TEFA MILK
 
     let text = 
         "Halo TEFA MILK,%0A" +
